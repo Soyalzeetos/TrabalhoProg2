@@ -8,20 +8,20 @@ Aplicação desktop desenvolvida em **C#** utilizando a tecnologia **Windows For
 
 - **Adicionar Aluno:** Cadastro com validação de campos (Nome, Data de Nascimento, Curso, Gênero e Disciplinas cursadas), gerando um resumo textual automático por item na `ListBox`.
 - **Disciplinas Dinâmicas:** Seleção de curso via `ComboBox` atualiza automaticamente as opções de disciplinas nos `CheckBoxes` por meio de indexação matricial.
-- **Visualizar Detalhes:** Apresentação da ficha completa do aluno selecionado no componente `RichTextBox`[cite: 1].
-- **Salvar Cadastros (`SaveFileDialog`):** Exportação de toda a lista de alunos da memória para arquivo `.txt` estruturado com separadores[cite: 1].
-- **Abrir Cadastros (`OpenFileDialog`):** Leitura de arquivo `.txt`, desserialização das linhas e reconstrução dos objetos na `ListBox`[cite: 1].
-- **Limpar Campos:** Restauração de todos os campos de entrada para o padrão inicial, preservando as listagens[cite: 1].
-- **Sair do Sistema:** Encerramento seguro da aplicação com confirmação via `MessageBox`[cite: 1].
+- **Visualizar Detalhes:** Apresentação da ficha completa do aluno selecionado no componente `RichTextBox`.
+- **Salvar Cadastros (`SaveFileDialog`):** Exportação de toda a lista de alunos da memória para arquivo `.txt` estruturado com separadores.
+- **Abrir Cadastros (`OpenFileDialog`):** Leitura de arquivo `.txt`, desserialização das linhas e reconstrução dos objetos na `ListBox`.
+- **Limpar Campos:** Restauração de todos os campos de entrada para o padrão inicial, preservando as listagens.
+- **Sair do Sistema:** Encerramento seguro da aplicação com confirmação via `MessageBox`.
 
 ---
 
 ## ⭐ Funcionalidades Extras
 
-- **Cálculo Dinâmico de Idade:** Determinação automática da idade em anos a partir da data informada no nascimento[cite: 1].
-- **Data e Hora de Cadastro:** Registro do momento exato do cadastro (`dd/MM/yyyy HH:mm:ss`), mantido fixo na persistência do arquivo[cite: 1].
-- **Remoção de Aluno:** Exclusão do aluno selecionado tanto da interface quanto da coleção em memória com confirmação via `MessageBox`[cite: 1].
-- **Customização Visual:** Ajuste de fontes e cores do painel de detalhes utilizando `FontDialog` e `ColorDialog`[cite: 1].
+- **Cálculo Dinâmico de Idade:** Determinação automática da idade em anos a partir da data informada no nascimento.
+- **Data e Hora de Cadastro:** Registro do momento exato do cadastro (`dd/MM/yyyy HH:mm:ss`), mantido fixo na persistência do arquivo.
+- **Remoção de Aluno:** Exclusão do aluno selecionado tanto da interface quanto da coleção em memória com confirmação via `MessageBox`.
+- **Customização Visual:** Ajuste de fontes e cores do painel de detalhes utilizando `FontDialog` e `ColorDialog`.
 
 ---
 
@@ -43,7 +43,7 @@ O sistema implementa uma matriz `[7, 5]` para alternar as disciplinas de acordo 
 
 ## 💾 Estrutura do Arquivo de Dados (`.txt`)
 
-O salvamento e a leitura utilizam o formato delimitado por ponto e vírgula (`;`)[cite: 1]:
+O salvamento e a leitura utilizam o formato delimitado por ponto e vírgula (`;`):
 
 ```text
 Nome;DataNascimento;Curso;Gênero;Disciplinas;DataCadastro
